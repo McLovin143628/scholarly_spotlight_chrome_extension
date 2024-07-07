@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikipedia Summarizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Wikipedia Summarizer</h1>
+    <div id="content">
+      <p><label for="keyword">Keyword:</label> <span id="keyword"></span></p>
+      <p><strong>Summary:</strong> <span id="summary-content">Waiting for selection...</span></p>
+      <div id="loading" aria-live="polite" hidden>Loading...</div>
+      <button id="refresh-btn" aria-label="Refresh summary">Refresh</button>
+    </div>
+  </main>
+  <script src="popup.js" defer></script>
+</body>
+</html>
